@@ -37,8 +37,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/application-code-frontend:latest
 
-
-    deploy-to-eks:
+  deploy-to-eks:
     name: 🚀 Deploy to EKS
     needs: build-and-push
     runs-on: ubuntu-latest
